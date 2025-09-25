@@ -1,0 +1,537 @@
+{
+	"info": {
+		"_postman_id": "8381e50b-11b8-4df5-9dff-3d368a0a7228",
+		"name": "Dorixona",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46840859",
+		"_collection_link": "https://red-water-3951189.postman.co/workspace/%D0%A8%D0%BE%D1%85%D0%B6%D0%B0%D1%85%D0%BE%D0%BD-%D0%97%D0%BE%D1%85%D0%B8%D1%80%D0%BE%D0%B2's-Workspace~ab66bf4c-488a-42a3-8ca5-2ae5653f2264/collection/46840859-8381e50b-11b8-4df5-9dff-3d368a0a7228?action=share&source=collection_link&creator=46840859"
+	},
+	"item": [
+		{
+			"name": "Region",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Egggg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/region",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/region",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find one by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/region/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"region",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBildingffffffffffffffffdsfd\",\r\n    \"email\":\"mb@maifgrl.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"12345678df9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/region/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"region",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/region/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"region",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MedicineType",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Type medicine test2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicine-type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicine-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBildingffffffffffffffffdsfd\",\r\n    \"email\":\"mb@maifgrl.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"12345678df9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicine-type/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicine-type",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/medicine-type/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicine-type",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBilding\",\r\n    \"email\":\"mb@mail.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"123456789\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicine-type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicine-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find one by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBilding\",\r\n    \"email\":\"mb@mail.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"123456789\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicine-type/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicine-type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "District",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"Chilonzor\",\r\n  \"regionId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/district",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"Chilonzor\",\r\n  \"regionId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/district/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"district",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/district/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"district",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBilding\",\r\n    \"email\":\"mb@mail.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"123456789\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/district",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find one by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBilding\",\r\n    \"email\":\"mb@mail.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"123456789\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/district/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"district",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicine",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Paracetamol\",\r\n  \"manufacturer\": \"Bayer\",\r\n  \"price\": 12.50,\r\n  \"expiry_date\": \"2026-05-01\",\r\n  \"info\": \"Обезболивающее и жаропонижающее средство\",\r\n  \"medicineTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Paracetamol bel ogriq\",\r\n  \"manufacturer\": \"Bayer\",\r\n  \"price\": 12.50,\r\n  \"expiry_date\": \"2026-05-01\",\r\n  \"info\": \"Обезболивающее и TEST UPDATEEEEEжаропонижающее средство\",\r\n  \"medicineTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicines/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicines",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/medicines/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicines",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBilding\",\r\n    \"email\":\"mb@mail.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"123456789\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find one by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MuratBilding\",\r\n    \"email\":\"mb@mail.uz\",\r\n    \"address\":\"Tashkent City\",\r\n    \"phone\":\"123456789\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/medicines/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"medicines",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
