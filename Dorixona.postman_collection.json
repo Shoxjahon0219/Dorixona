@@ -761,6 +761,236 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Authentication",
+					"item": [
+						{
+							"name": "SignIn",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"botivsadfaddr@mail.uz\",\n    \"password\": \"qwertyyyy\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/signin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SignUp",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"botivsadfaddr@mail.uz\",\n    \"password\": \"qwerty\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJib3RpdnNhZGZhZGRyQG1haWwudXoiLCJpc19hY3RpdmUiOnRydWUsInJvbGUiOiJTdXBlcmFkbWluIiwiaWF0IjoxNzU4MDI3ODk4LCJleHAiOjE3NTgwMjgxOTh9.7Pjtr6bENuAy_9fjkhnYRZLvpzVF_s0K-wOO3h35JOc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Otabek\",\n    \"password\": \"12345678\",\n    \"isCreator\": true,\n    \"email\": \"otabek@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJib3RpdnNhZGZhZGRyQG1haWwudXoiLCJpc19hY3RpdmUiOnRydWUsInJvbGUiOiJTdXBlcmFkbWluIiwiaWF0IjoxNzU4MDI0MDc4LCJleHAiOjE3NTgwMjQzNzh9.isLYVj6UfMLch5SzG9Hsji7MwKdS7fZ3NrBLELEl9q4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJib3RpdnNhZGZhZGRyQG1haWwudXoiLCJpc19hY3RpdmUiOnRydWUsImlhdCI6MTc1Njk5MjA2MCwiZXhwIjoxNzU3MDQ2MDYwfQ.0zcQQEN2xSXKO86sR4KKOGjGxFgVn2CkarepM6_2iSo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"Admin Adminovich\",\n    \"password\": \"qwertyyyy\",\n    \"phone_number\": \"1234567\",\n    \"email\": \"botivsadfaddr@mail.uz\",\n    \"is_active\": false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
